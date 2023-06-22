@@ -22,6 +22,12 @@ export const AddButton = styled.button`
     color: #fff;
   }
 
+  &:disabled:hover,
+  :focus {
+    background-color: #fff;
+    color: #d5d5d5;
+  }
+
   &:active {
     background-color: gray;
   }

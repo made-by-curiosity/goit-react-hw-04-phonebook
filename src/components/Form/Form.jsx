@@ -9,7 +9,7 @@ export const AddForm = ({ onSubmit }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
     reset,
   } = useForm({
     defaultValues: {
@@ -59,7 +59,9 @@ export const AddForm = ({ onSubmit }) => {
         />
       </label>
       <ErrorText>{errors?.number?.message}</ErrorText>
-      <AddButton type="submit">Add Contact</AddButton>
+      <AddButton type="submit" disabled={!isValid}>
+        Add Contact
+      </AddButton>
     </PhonebookForm>
   );
 };
