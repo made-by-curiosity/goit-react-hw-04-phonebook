@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useForm } from 'react-hook-form';
-// import { Formik, Field, ErrorMessage } from 'formik';
-// import * as yup from 'yup';
 import { AddButton, PhonebookForm, ErrorText } from './Form.styled';
 
 export const AddForm = ({ onSubmit }) => {
