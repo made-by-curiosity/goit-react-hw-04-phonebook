@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import { Form } from 'formik';
 
-export const PhonebookForm = styled(Form)`
+export const PhonebookForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
